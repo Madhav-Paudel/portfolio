@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://kit.fontawesome.com/ec9e19ac71.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="/images/logo1.png.png" class="logo" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact1">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I'm <span>Madhav </span><br />Paudel from Nepal</h1>
+        </div>
+      </div>
+    </div>
+    <!-- ----------about section---------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/images/user1.png" alt="user image" />
+          </div>
+          <div class="about-col-1">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut modi
+              temporibus saepe obcaecati enim ex quas autem doloribus soluta ad
+              minus beatae possimus minima harum dignissimos, neque esse nihil
+              quaerat ipsum consequuntur tenetur reiciendis labore? Fugiat
+              facilis esse, quas fugit, adipisci ipsam explicabo nesciunt
+              magnam, odio ab quam dicta sequi?Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Dolorum ducimus et officia veritatis
+              placeat molestiae.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab(event, 'skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab(event, 'experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+            </div>
+            <!-- ------------ skill------------ -->
+            <div class="tab-contains active-tab" id="skills">
+              <ul>
+                <li><span>NA</span><br />Lorem ipsum dolor sit amet.</li>
+                <li><span>Web Development</span><br />Web app development</li>
+                <li>
+                  <span>Lorem, ipsum dolor.</span><br />Lorem ipsum dolor sit amet consectetur.
+                </li>
+              </ul>
+            </div>
+            <!-- -----------------experience--------- -->
+            <div class="tab-contains" id="experience">
+              <ul>
+                <li><span>2021-Present</span><br />teacher at gyan (math)youtube</li>
+                <li><span>NA</span><br />Lorem ipsum dolor sit.</li>
+                <li><span>NA</span><br />Lorem ipsum dolor sit amet.</li>
+              </ul>
+            </div>
+            <!-- ---------------- Education------------- -->
+            <div class="tab-contains" id="education">
+              <ul>
+                <li>
+                  <span>2065-2077</span><br />secondary education at bansgadhi
+                </li>
+                <li><span>2078-2080</span><br />high education at bansgadhi</li>
+                <li>
+                  <span>2080-present</span><br />Bachelor (B.s.c CSIT) at vedas
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------services------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <img src="/images/code.png" class="images-tags" alt="" />
+            <h2>Lorem</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <img src="/images/crop.png" class="images-tags" />
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <img src="/images/app-icon.png" class="images-tags" alt="" />
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil?
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------ my worked section section------------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <!-- project ko image haru -->
+          <div class="work">
+            <img src="/images/work-1.png" alt="work" />
+            <div class="layer">
+              <!-- h3 contain title what we made -->
+              <h3>social media app</h3>
+              <!-- p tag contain discription of that app -->
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita, nam.
+              </p>
+              <!-- a tag contain link of the that project -->
+              <a href="#"><img src="/images/link1.icon.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="/images/work-2.png" alt="work" />
+            <div class="layer">
+                <!-- h3 contain title what we made -->
+                <h3>social media app</h3>
+                <!-- p tag contain discription of that app -->
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita, nam.
+                </p> 
+                <!-- a tag contain link of the that project -->
+                <a href="#"><img src="/images/link1.icon.png" alt="" /></a>
+              </div>
+          </div>
+          <div class="work">
+            <img src="/images/work-3.png" alt="work" />
+            <div class="layer">
+                <!-- h3 contain title what we made -->
+                <h3>music app</h3>
+                <!-- p tag contain discription of that app -->
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Expedita, nam.
+                </p> 
+                <!-- a tag contain link of the that project -->
+                <a href="#"><img src="/images/link1.icon.png" alt="" /></a>
+              </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- --------contact section --------------- -->
+    <div id="contact1">
+    <div class="contact">
+      <div class="container">
+        <div class="row">
+         <div class="contact-left">
+          <h1 class="sub-title"> Contact Me</h1>
+          <P><i class="fa-solid fa-paper-plane"></i> madhav.paudel40400@gmail.com</P>
+          <p><i class="fa-solid fa-phone"></i> 9703402024</p>
+          <div class="social-icon">
+            <a href="https://www.facebook.com/madhav.paudel.3152"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/madhav-paudel-163644191/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/___madhav__paudel/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/GYAN_WALLA/with_replies"><i class="fa-brands fa-x-twitter"></i></a>
+       </div>
+<a href="/images/PROCESSING.pdf" download class="btn btn2">Download CV</a>
+         </div>
+     
+        <div class="contact-right">
+          <form name="submit-to-google-sheet" >
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+      </div>
+      <div class="copyright">
+<p>Copyright © Madhab Paudel- All rights reserved</p>
+</div>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contains");
+
+      function opentab(event, tabname) {
+        for (let tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <!-- small click feature -->
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzp0o_5eiHui0y4fhGHQfkeCuMpbz43l1dkxtDenmMJEbb74yKtjRBgCS7nK_DjWFPS2Q/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function() {
+              msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
